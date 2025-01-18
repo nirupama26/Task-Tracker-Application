@@ -1,4 +1,5 @@
 Task Tracker Application
+
 Overview
 The Task Tracker Application is an advanced and feature-rich project designed to help users organize and manage their tasks efficiently. This application allows users to add tasks, prioritize them, set deadlines, mark tasks as completed, and filter or search tasks for better task management. The application is built using modern web development technologies and showcases strong frontend development skills, making it an excellent addition to any portfolio.
 
