@@ -1,54 +1,88 @@
-# Task Tracker Application
+# Task Tracker Application 🚀
 
-## Overview
-The **Task Tracker Application** is an advanced and feature-rich project designed to help users organize and manage their tasks efficiently. This application allows users to:
-- Add tasks.
-- Prioritize them (High, Medium, Low).
-- Set deadlines.
-- Mark tasks as completed.
-- Filter or search tasks for better task management.
+This is a **Task Tracker Application** built using:
+- **Frontend:** React.js
+- **Backend:** Spring Boot (Java)
+- **Database:** PostgreSQL
+- **Deployment:** Render (or Future Plan: AWS/Heroku)
 
-This project showcases strong frontend development skills and serves as a valuable addition to any portfolio.
+## 📌 Features
+- Add, Edit, Delete Tasks
+- Sort Tasks by **Category, Due Date, and Completion Status**
+- Task Progress Bar to Track Completion
+- Persistent Task Storage in Database
+
+## 📂 Project Structure
+```
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Reusable Components
+│   │   ├── App.js         # Main App Logic
+│   │   ├── index.js       # React Entry Point
+│   ├── package.json       # Dependencies & Scripts
+│   ├── public/            # Static Files
+│
+├── backend/
+│   ├── src/main/java/com/tasktracker/
+│   │   ├── controller/    # REST API Controllers
+│   │   ├── repository/    # Database Layer
+│   │   ├── service/       # Business Logic
+│   │   ├── TaskApplication.java  # Main Entry Point
+│   ├── pom.xml            # Dependencies (Spring Boot)
+│
+├── README.md              # Documentation
+├── .gitignore             # Ignored Files
+├── LICENSE                # Open-source License
+```
+
+## 🚀 How to Run Locally
+### **Frontend**
+```sh
+cd frontend
+npm install
+npm start
+```
+### **Backend**
+```sh
+cd backend
+mvn spring-boot:run
+```
+
+## 🌍 Deployment Steps (Render)
+1. Push your code to GitHub
+2. Connect GitHub Repository to Render
+3. Select **Web Service** → Choose `Dockerfile` or Manual Build
+4. Deploy!
 
 ---
 
-## Features
-### Task Management:
-- Add tasks with a name, priority, and due date.
-- Mark tasks as completed or incomplete.
-- Delete tasks.
+## 📤 Uploading to GitHub
+Follow these steps:
 
-### Sorting:
-- Automatically sorts tasks by priority (High > Medium > Low) and due date (earliest first).
+### 1️⃣ **Navigate to Project Folder in Terminal**
+```sh
+cd path/to/your/project
+```
 
-### Search & Filter:
-- Search tasks by name.
-- Filter tasks by status: All, Completed, or Incomplete.
+### 2️⃣ **Initialize Git (If Not Initialized)**
+```sh
+git init
+```
 
-### Visual Enhancements:
-- **High Priority**: Displayed in red.
-- **Medium Priority**: Displayed in orange.
-- **Low Priority**: Displayed in green.
+### 3️⃣ **Add Remote GitHub Repository**
+```sh
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/Task-Tracker-Application.git
+```
 
----
+### 4️⃣ **Add and Commit Files**
+```sh
+git add .
+git commit -m "Initial commit - Task Tracker Application"
+```
 
-## Tech Stack
-- **Frontend**: React.js
-- **Backend** (future plans): Node.js with Express.js or Firebase for authentication and data persistence.
-- **Database** (future plans): MongoDB or SQL-based databases like PostgreSQL.
+### 5️⃣ **Push to GitHub**
+```sh
+git push -u origin main
+```
 
----
-
-## File Structure
-```plaintext
-frontend/
-├── public/              # Static files
-├── src/                 # React components
-│   ├── components/      # All reusable components
-│   │   ├── AddTask.js   # Component to add tasks
-│   │   ├── Header.js    # Header of the application
-│   │   └── TaskList.js  # Displays the list of tasks
-│   └── App.js           # Main application logic
-├── .gitignore           # Files and folders to ignore in git
-├── package.json         # npm dependencies and scripts
-├── README.md            # Documentation of the project
+Your project is now live on GitHub! 🎉🚀
